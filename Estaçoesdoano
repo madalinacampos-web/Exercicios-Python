@@ -1,0 +1,15 @@
+estadoMS=(input("Qual o estado da pedra (molhada / seca):"))
+estadoQS=(input("Qual o estado da pedra (quente / fria):"))
+temp=(float(input("Qual a temperatura da pedra:")))
+if estadoMS=="molhada" and estadoQS=="quente":
+    print("A estação atual é primavera")
+    print("A sensação termica é",(temp*0.10)+temp)
+elif estadoMS=="molhada" and estadoQS=="fria":
+    print("A estação atual é inverno")
+    print("A sensação termica é",temp-(temp*0.10))
+elif estadoMS=="seca" and estadoQS=="quente":
+    print("A estação atual é verão")
+    print("A sensação termica é",(temp*0.20)+temp)
+else:    
+    print("A estação atual é outono")
+    print("A sensação termica é",temp-(temp*0.20))

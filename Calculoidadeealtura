@@ -1,0 +1,16 @@
+cont=0
+maioridade=0
+menoridade=0
+somalt=0
+while cont<12: 
+    idade=(int(input("Digite sua idade: ")))
+    altura=(float(input("Digite altura: ")))
+    if idade >= 18:
+        maioridade=maioridade+1
+    else:
+        menoridade=menoridade+1
+    somalt=somalt+altura
+    cont=cont+1
+print("maiores de idade:",maioridade)
+print("menores de idade:",menoridade)
+print("média das alturas:",somalt/12)

@@ -1,0 +1,15 @@
+from math import*
+
+peso=float(input("Qual seu peso?: "))
+altura=float(input("Qual seu altura?: "))
+
+imc= peso / pow(altura,2)
+
+if (imc < 20 ):
+    print("Abaixo do peso")
+elif (25 >= imc >= 20):
+    print("Peso normal")
+elif(30 >= imc >= 25):
+    print("Sobrepeso")
+else:
+    print("Obesidade")

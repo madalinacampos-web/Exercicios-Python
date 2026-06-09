@@ -1,0 +1,14 @@
+idadeH1=int(input())
+idadeH2=int(input())
+idadeM1=int(input())
+idadeM2=int(input())
+
+if (idadeH1 > idadeH2) and (idadeM1 > idadeM2):
+    soma=idadeH1 + idadeM2
+    produto= idadeH2 * idadeM1
+else:
+    soma=idadeH2 + idadeM1
+    produto= idadeH1 * idadeM2
+
+print("soma", soma)
+print("prodruto",produto)
