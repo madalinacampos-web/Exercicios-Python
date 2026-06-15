@@ -1,0 +1,44 @@
+cad1=0
+cad2=0
+cad3=0
+cad4=0
+nulo=0
+branco=0
+totalvoto=0
+totalvotonb=0
+
+voto = int(input("Digite seu voto: "))
+
+while voto !=0:
+    if voto == 1:
+        cad1=cad1+1
+        totalvoto=totalvoto+1
+    elif voto ==2:
+        cad2=cad2+1
+        totalvoto=totalvoto+1
+    elif voto ==3:
+        cad3=cad3+1
+        totalvoto=totalvoto+1
+    elif voto ==4:
+        cad4=cad4+1
+        totalvoto=totalvoto+1
+    elif voto ==5:
+        nulo=nulo+1
+        totalvotonb=totalvotonb+1
+        totalvoto=totalvoto+1
+    elif voto ==6:
+        branco=branco+1
+        totalvotonb=totalvotonb+1
+        totalvoto=totalvoto+1
+    voto = int(input("Digite seu voto: "))
+
+
+print("Candidato 1 recebeu",cad1, "votos", "Seu percentual sobre o total é de", (cad1 / totalvoto) )
+print("Candidato 2 recebeu",cad2, "votos", "Seu percentual sobre o total é de", (cad2 / totalvoto) )
+print("Candidato 3 recebeu",cad3, "votos", "Seu percentual sobre o total é de", (cad3 / totalvoto) )
+print("Candidato 4 recebeu",cad4, "votos", "Seu percentual sobre o total é de", (cad4 / totalvoto) )
+print("Nulos",nulo, "votos", "Seu percentual sobre o total é de", (nulo / totalvoto) )
+print("Branco",branco, "votos", "Seu percentual sobre o total é de", (branco / totalvoto) )
+print("Candidato 1 recebeu",cad1, "votos", "Seu percentual sobre o total é de", (cad1 / totalvoto) )
+print("Votos validos",totalvoto-totalvotonb, "votos", "Seu percentual sobre o total é de", ((totalvoto-totalvotonb) / totalvoto) )
+    
